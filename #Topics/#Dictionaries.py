@@ -16,4 +16,23 @@ for player in sorted(players.keys()):#use .values() to access values stored in k
 
 
 #we can use set() like sorted which makes a set of values without repeatation of values
-#Nesting
+#Nesting or List of Dictionaries
+alien_0={'color':'green','points':5}
+alien_1={'color':'yellow','points':10}
+alien_2={'color':'red','points':15}
+aliens = [alien_0,alien_1,alien_2]
+for alien in aliens:
+    print(alien)
+
+#making an empty list for storing alien.
+aliens=[]
+#Making 30 green aliens:
+alien={'color':'green','points':15,'speed':'slow'}
+for a in range(30):
+    aliens.append(alien)
+#show the first 5 aliens:
+for aliens_created in aliens[:5]:
+    print(aliens_created)
+print("...\n\n")
+print('Total number of aliens:' + str(len(aliens)))
+
