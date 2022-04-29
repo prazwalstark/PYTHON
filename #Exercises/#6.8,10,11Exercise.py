@@ -19,3 +19,9 @@ for name,num in fav_num.items():
 
 #Exercise 6.11
 cities={'Seoul':{'country':'Korea','population':'9.8m','fact':'Its third largest city in the world.'},'Barcelona':{'country':'Spain','population':'1.62m','fact':'It is known for its art and architecture.'},'Kathmandu':{'country':'Nepal','population':'1.44m','fact':'It is one of the most polluted city in the world.'}}
+for city,info in cities.items():
+        print('City: '+city)
+        print('\t'+'Country: '+info['country'])
+        print('\t'+'Population: '+info['population'])
+        print('\t'+'Fact: '+info['fact'])
+        print('\n\n')
