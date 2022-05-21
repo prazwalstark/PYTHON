@@ -28,4 +28,7 @@ name(first_name='Tony', last_name='Stark',sex='100')
 name(first_name='Prazwal', last_name='Stark',sex='')
 # It's just a program and please don't ger offended by the word 'sex', I am feeling a bit sleepy so I just used it huh.
 # Returning a Dictionary
+#Using Modules in Programming
+import pizza
+pizza.make_pizza(16,'pepperoni','green peppers','chicken','extra cheese')
 
