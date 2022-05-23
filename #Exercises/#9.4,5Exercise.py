@@ -54,3 +54,36 @@ for i in range(1,5):
 person1.login_attempt()
 person1.reset_login_attempts()
 person1.login_attempt()
+
+#Exercise 9.6
+class IceCreamStand(Restaurant):
+    def __init__(self,restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors=[]
+    def icecream_flavors(self):
+        self.flavors=['Chocolate','Vanilla',"Strawberry",'Mix-Fruit']
+        print('The Flavors of Ice-Cream available in this restaurant are:')
+        for flavor in self.flavors:
+            print('-'+flavor)
+icecreamstand1= IceCreamStand('Bagelarium & STG Gelateria Broken Arrow','Desert')
+print(icecreamstand1.restaurant_name.title())
+print(icecreamstand1.cuisine_type.title())
+icecreamstand1.icecream_flavors()
+
+#Exercise 9.8
+class Admin(User):
+    def __init__(self,first_name,last_name,address, email,phone_number,Privilege):
+        super().__init__(first_name,last_name,address, email,phone_number)
+        self.Privilege = Privileges(Privilege)
+class Privileges():
+    def __init__(self,Privilegee):
+        self.Privilegee= Privilegee
+    def show_privileges(self):
+        print('The administrative privilege of user are:\n')
+        for privilege in self.Privilegee:
+            print('-'+privilege)
+prazwal = Admin('Prazwal','D. Stark','Pulchowk','prazwaldstark@gmail.com','9845632882',Privilege=['can add post','can delete post','can ban user'])
+prazwal.Privilege.show_privileges()
+
+#Exercies 9.9
+
