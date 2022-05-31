@@ -43,7 +43,6 @@ make_sandwich(sandwiches)
 
 #Exercise 8.13
 import modulefor8
-characteristic= {}
 print(modulefor8.build_profile('Prazwal D.', 'Stark',Address= 'Kathmandu',Roll_No='55',Sec='BCT CD'))
 from modulefor8 import build_profile
 print(build_profile('Prazwal D.', 'Stark',Address= 'Kathmandu',Roll_No='55',Sec='BCT CD'))
